@@ -112,7 +112,7 @@ The following dashboards provide an interactive view of the banking portfolio an
 
 # Data Architecture & Data Model
 
-The project follows a dimensional data modelling approach designed to support enterprise banking analytics and credit risk reporting.
+The project follows a dimensional data modeling approach designed to support enterprise banking analytics and credit risk reporting.
 
 ## Data Model Architecture
 
@@ -146,18 +146,18 @@ The architecture consists of:
 - A_Measure
 - Portfolio_Performance
 - Customer_Risk_Segment
-- Security_Access
+- SecurityAccess
 
 ## Technical Documentation
 
-Detailed documentation is available below:
-
-## Technical Documentation
+Detailed technical documentation is available below:
 
 - [Data Model Overview](03_Data_Model/README.md)
 - [Table Relationships](03_Data_Model/Table_Relationships.md)
 - [Table Dictionary](03_Data_Model/Table_Dictionary.md)
 - [Data Model Diagram](03_Data_Model/Data_Model_Diagram.png)
+- [Dynamic RLS Documentation](05_RLS_Security/README.md)
+- [Project Documentation](06_Project_Documentation/README.md)
 
 ## Data Governance
 
@@ -167,5 +167,7 @@ Detailed documentation is available below:
 - Active and inactive date relationships.
 - Centralized DAX measure management.
 
+---
 
+**Project Note:** This solution was developed using Microsoft Power BI Desktop, Power Query, DAX, and Star Schema data modeling. All banking data is synthetic and intended exclusively for demonstration and portfolio purposes.
 
