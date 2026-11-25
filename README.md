@@ -85,3 +85,24 @@ Core Expertise:
 
 Professional Profile: [Coming soon]
 
+---
+
+## Dashboard Previews
+
+The following dashboards provide an interactive view of the banking portfolio and credit risk analytics solution.
+
+### 1. Executive Overview
+![Executive Overview](01_Dashboard_Previews/01_Executive_Overview.png)
+
+### 2. Credit Risk Analysis
+![Credit Risk Analysis](01_Dashboard_Previews/02_Credit_Risk_Analysis.png)
+
+### 3. Customer Portfolio Analytics
+![Customer Portfolio Analytics](01_Dashboard_Previews/03_Customer_Portfolio_Analytics.png)
+
+### 4. Branch & Regional Performance
+![Branch & Regional Performance](01_Dashboard_Previews/04_Branch_Regional_Performance.png)
+
+### 5. Collections & Recovery Analytics
+![Collections & Recovery](01_Dashboard_Previews/05_Collections_Recovery.png)
+
