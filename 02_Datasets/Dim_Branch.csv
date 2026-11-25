@@ -1,0 +1,21 @@
+Branch_ID,Branch_Name,City,Region,Country,Branch_Manager,Branch_Target_Annual
+BR001,Delhi Central Branch,Delhi,North,India,Manager_01,95172662
+BR002,Jaipur North Branch,Jaipur,North,India,Manager_02,211572528
+BR003,Lucknow South Branch,Lucknow,North,India,Manager_03,191277158
+BR004,Chandigarh East Branch,Chandigarh,North,India,Manager_04,154609334
+BR005,Delhi West Branch,Delhi,North,India,Manager_05,153612590
+BR006,Chennai Central Branch,Chennai,South,India,Manager_06,225961646
+BR007,Hyderabad North Branch,Hyderabad,South,India,Manager_07,94610758
+BR008,Kochi South Branch,Kochi,South,India,Manager_08,198552564
+BR009,Bengaluru East Branch,Bengaluru,South,India,Manager_09,114249821
+BR010,Chennai West Branch,Chennai,South,India,Manager_10,96010149
+BR011,Ahmedabad Central Branch,Ahmedabad,West,India,Manager_11,169501426
+BR012,Surat North Branch,Surat,West,India,Manager_12,245855799
+BR013,Mumbai South Branch,Mumbai,West,India,Manager_13,205077902
+BR014,Pune East Branch,Pune,West,India,Manager_14,209393749
+BR015,Ahmedabad West Branch,Ahmedabad,West,India,Manager_15,201971137
+BR016,Guwahati Central Branch,Guwahati,East,India,Manager_16,213630931
+BR017,Kolkata North Branch,Kolkata,East,India,Manager_17,167248517
+BR018,Bhubaneswar South Branch,Bhubaneswar,East,India,Manager_18,101779317
+BR019,Patna East Branch,Patna,East,India,Manager_19,222757198
+BR020,Guwahati West Branch,Guwahati,East,India,Manager_20,156565609

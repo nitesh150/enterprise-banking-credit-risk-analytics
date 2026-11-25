@@ -1,0 +1,6 @@
+Product_ID,Product_Name,Base_Interest_Rate,Max_Tenure_Months
+PRD01,Personal Loan,13.5,60
+PRD02,Home Loan,8.4,240
+PRD03,Auto Loan,9.8,84
+PRD04,Business Loan,14.2,120
+PRD05,Education Loan,9.2,120
