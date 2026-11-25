@@ -106,3 +106,64 @@ The following dashboards provide an interactive view of the banking portfolio an
 ### 5. Collections & Recovery Analytics
 ![Collections & Recovery](01_Dashboard_Previews/05_Collections_Recovery.png)
 
+
+
+---
+
+# Data Architecture & Data Model
+
+The project follows a dimensional data modelling approach designed to support enterprise banking analytics and credit risk reporting.
+
+## Data Model Architecture
+
+The architecture consists of:
+
+- 3 Fact Tables
+- 4 Dimension Tables
+- 4 Supporting Tables
+- Shared dimensions for consistent analytical reporting
+- Dynamic Row-Level Security (RLS)
+
+## Fact Tables
+
+| Table | Description |
+|---|---|
+| Fact_Loan | Loan disbursement and outstanding portfolio data |
+| Fact_Payment | Payment transactions and repayment information |
+| Fact_Collections | Collections and recovery activities |
+
+## Dimension Tables
+
+| Table | Description |
+|---|---|
+| Dim_Customer | Customer demographic and income information |
+| Dim_Branch | Branch and regional information |
+| Dim_Product | Loan product information |
+| Dim_Calendar | Centralized date dimension |
+
+## Supporting Tables
+
+- A_Measure
+- Portfolio_Performance
+- Customer_Risk_Segment
+- Security_Access
+
+## Technical Documentation
+
+Detailed documentation is available below:
+
+- [Data Model Overview](06_Data_Model/README.md)
+- [Table Relationships](06_Data_Model/Table_Relationships.md)
+- [Table Dictionary](06_Data_Model/Table_Dictionary.md)
+- [Data Model Diagram](06_Data_Model/Data_Model_Diagram.png)
+
+## Data Governance
+
+- Synthetic banking datasets only.
+- Dynamic Row-Level Security implementation.
+- Shared dimensional architecture.
+- Active and inactive date relationships.
+- Centralized DAX measure management.
+
+
+
