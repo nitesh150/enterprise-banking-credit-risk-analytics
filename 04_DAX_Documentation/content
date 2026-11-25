@@ -1,13 +1,14 @@
-# Data Model Documentation
+# DAX Documentation
 
-This folder contains the dimensional data model documentation for the Enterprise Banking Analytics solution.
+This folder contains documentation of the DAX measures developed for the banking analytics solution.
 
-The project follows a Star Schema approach to organize banking data and support efficient analytical reporting.
+Key areas include:
 
-Documentation includes:
-
-- Fact tables
-- Dimension tables
-- Table relationships
-- Data model architecture
-- Relationship design and filtering logic
+- Loan portfolio KPIs
+- Outstanding loan calculations
+- NPA analysis
+- Portfolio performance metrics
+- Customer analytics
+- Branch performance indicators
+- Collections and recovery metrics
+- Time intelligence and period comparisons
