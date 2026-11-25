@@ -1,1 +1,15 @@
 
+# DAX Documentation
+
+This folder contains documentation of the DAX measures developed for the banking analytics solution.
+
+Key areas include:
+
+- Loan portfolio KPIs
+- Outstanding loan calculations
+- NPA analysis
+- Portfolio performance metrics
+- Customer analytics
+- Branch performance indicators
+- Collections and recovery metrics
+- Time intelligence and period comparisons
