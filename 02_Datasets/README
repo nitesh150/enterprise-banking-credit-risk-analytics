@@ -1,105 +1,67 @@
 # Banking Analytics – Dataset Documentation
 
-<p align="center">
+A collection of synthetic banking datasets used to build the **Enterprise Banking – Credit Risk & Portfolio Intelligence Platform** using Microsoft Power BI.
 
-**Enterprise Banking | Credit Risk & Portfolio Intelligence**
+The datasets simulate a banking environment and support loan portfolio analysis, credit risk monitoring, customer analytics, branch performance, and collections analysis.
 
-*Dataset Reference • Data Architecture • Analytical Coverage*
-
-</p>
+All data is fictional and created exclusively for portfolio demonstration. No confidential customer or employer data is used.
 
 ---
 
-## 📌 1. Overview
+## 1. Source Datasets
 
-This folder contains the synthetic banking datasets used to develop the **Enterprise Banking – Credit Risk & Portfolio Intelligence Platform** in Microsoft Power BI.
+The project consists of six CSV datasets.
 
-The datasets simulate a banking environment and support analysis of loan portfolios, credit risk, customer behaviour, branch performance, payment trends, and collections efficiency.
+| Dataset | Type | Description |
+|---|---|---|
+| `Dim_Branch` | Dimension | Branch details, locations, regions, managers and annual targets |
+| `Dim_Customer` | Dimension | Customer demographics, income, employment and branch mapping |
+| `Dim_Product` | Dimension | Loan products, interest rates and maximum tenure |
+| `Fact_Loan` | Fact | Loan details, disbursements, outstanding balances and delinquency |
+| `Fact_Payment` | Fact | Payment schedules, due amounts, paid amounts and payment status |
+| `Fact_Collections` | Fact | Collection assignments, overdue amounts and recovery details |
 
-All records are fictional and created exclusively for portfolio demonstration and analytical purposes. No confidential customer, employer, or institutional data is used.
+## 2. Supporting Power BI Tables
 
-## 📂 2. Source Datasets
-
-The project uses six core CSV datasets, organized into fact and dimension tables.
-
-### Dimension Tables
-
-| Dataset | Description |
-|---|---|
-| `Dim_Branch.csv` | Branch identifiers, names, cities, regions, managers, and annual targets |
-| `Dim_Customer.csv` | Customer identifiers, demographics, age bands, income, employment type, and branch mapping |
-| `Dim_Product.csv` | Loan product categories, base interest rates, and maximum tenure |
-
-### Fact Tables
-
-| Dataset | Description |
-|---|---|
-| `Fact_Loan.csv` | Loan details, disbursement amounts, outstanding balances, interest rates, loan status, and days past due |
-| `Fact_Payment.csv` | Payment schedules, due amounts, paid amounts, payment channels, and payment status |
-| `Fact_Collections.csv` | Collection assignments, overdue amounts, recovered amounts, resolution dates, and collection status |
-
-## ⚙️ 3. Power BI Calculated Tables
-
-In addition to the six source datasets, the Power BI model contains supporting tables created within Power BI using DAX.
-
-These are model-level tables and are not separate CSV source files.
+The following tables are created within the Power BI model and are not separate source datasets.
 
 | Table | Purpose |
 |---|---|
-| `Dim_Calendar` | Consolidated date dimension supporting date-based analysis |
-| `Portfolio_Performance` | Categorizes portfolio exposure into Performing and Non-Performing |
-| `Customer_Risk_Segment` | Supports customer segmentation based on NPA exposure |
-| `SecurityAccess` | Maintains demonstration user access mappings for Admin, Regional, and Branch-level security |
+| `Dim_Calendar` | Date-based analysis and reporting |
+| `Portfolio_Performance` | Performing and Non-Performing portfolio classification |
+| `Customer_Risk_Segment` | Customer risk segmentation |
+| `SecurityAccess` | User access mapping for Dynamic Row-Level Security |
 
-## 📊 4. Analytical Coverage
+## 3. Analytical Coverage
 
-The datasets support the following banking and credit-risk analytical areas:
+The datasets support analysis across the following business areas:
 
-- **Loan Portfolio Analysis** – Disbursed loans, outstanding balances, and portfolio composition.
-- **Credit Risk & NPA Monitoring** – NPA exposure, delinquency levels, and DPD analysis.
-- **Customer Analytics** – Customer demographics, income profiles, and risk segmentation.
-- **Product Performance** – Loan product distribution and portfolio contribution.
-- **Branch & Regional Performance** – Branch-level exposure, regional comparisons, and target achievement.
-- **Collections & Recovery** – Overdue amounts, recovered amounts, and collection performance.
-- **Payment Analytics** – Payment behaviour, payment status, and collection efficiency.
+- Loan portfolio and outstanding exposure
+- Credit risk, NPA and delinquency
+- Customer demographics and risk segmentation
+- Loan product performance
+- Branch and regional performance
+- Collections and recovery efficiency
+- Payment behaviour and trends
 
-## 🏗️ 5. Data Model Integration
+## 4. Data Model
 
-The six source datasets form the foundation of a dimensional data model implemented in Power BI.
+The datasets are integrated into a dimensional model in Power BI.
 
-The model includes:
+The model consists of three fact tables, three core dimension tables, and supporting tables for date analysis, portfolio classification, customer segmentation and security.
 
-- Three fact tables: `Fact_Loan`, `Fact_Payment`, and `Fact_Collections`.
-- Three dimension tables: `Dim_Branch`, `Dim_Customer`, and `Dim_Product`.
-- A calendar dimension for time-based reporting.
-- Supporting tables for portfolio classification, customer risk segmentation, and security access.
+It supports interactive reporting, DAX calculations, cross-dimensional analysis and Dynamic Row-Level Security.
 
-This structure supports interactive dashboards, DAX-based calculations, cross-dimensional analysis, and dynamic Row-Level Security (RLS).
+For more details, see the [Data Model Documentation](../03_Data_Model/README.md).
 
-For additional details, refer to the [Data Model Documentation](../03_Data_Model/README.md).
+## 5. Data Privacy
 
-## 🔐 6. Data Privacy & Governance
+- All datasets contain synthetic records.
+- Customer details, identifiers, email addresses and financial values are fictional.
+- Security access records are for demonstration purposes only.
+- No confidential employer or production banking data is included.
+- The editable Power BI project file is maintained separately.
 
-Data privacy is an important consideration throughout this portfolio project.
+## 6. Disclaimer
 
-- All banking and customer records are synthetic.
-- Customer names, identifiers, email addresses, and financial values are fictional.
-- Demonstration security emails are not intended for authentication against real banking systems.
-- No confidential employer, customer, or production banking data is included.
-- The editable Power BI project file is maintained separately and is not included in this public repository.
-
-## ⚠️ 7. Disclaimer
-
-This project is an independently developed Business Intelligence portfolio demonstration.
-
-It does not represent an actual bank, financial institution, customer portfolio, or production banking system. All datasets are fictional and intended solely for educational, analytical, and demonstration purposes.
-
----
-
-<p align="center">
-
-**Built with Microsoft Power BI | DAX | Power Query**
-
-*Enterprise Banking Analytics Portfolio Project*
-
-</p>
+This is an independently developed portfolio project. It does not represent an actual bank, financial institution or production banking system. All data is intended solely for educational and demonstration purposes.
