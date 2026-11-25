@@ -1,0 +1,14 @@
+# Row-Level Security (RLS) Documentation
+
+This folder documents the Dynamic Row-Level Security implementation.
+
+Key features:
+
+- Dynamic RLS configuration
+- Branch-level data access control
+- User-based filtering
+- Security mapping table
+- USERPRINCIPALNAME() implementation
+- RLS validation and testing
+
+The objective is to ensure users can access only the banking data authorized for their assigned branch.
