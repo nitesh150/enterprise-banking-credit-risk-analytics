@@ -1,0 +1,13 @@
+# Synthetic Banking Datasets
+
+This folder contains synthetic datasets used to develop the Enterprise Banking – Credit Risk & Portfolio Intelligence Platform.
+
+The datasets simulate banking operations, including:
+
+- Loan portfolio information
+- Customer information
+- Branch information
+- Payment transactions
+- Collections and recovery
+
+All records are fictional and created exclusively for demonstration purposes.
