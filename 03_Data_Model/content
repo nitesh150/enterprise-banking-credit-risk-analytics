@@ -1,0 +1,13 @@
+# Data Model Documentation
+
+This folder contains the dimensional data model documentation for the Enterprise Banking Analytics solution.
+
+The project follows a Star Schema approach to organize banking data and support efficient analytical reporting.
+
+Documentation includes:
+
+- Fact tables
+- Dimension tables
+- Table relationships
+- Data model architecture
+- Relationship design and filtering logic
