@@ -1,0 +1,56 @@
+# Banking Analytics – Dataset Documentation
+
+## 1. Overview
+
+This project uses synthetic banking data to demonstrate an enterprise-style Credit Risk and Portfolio Intelligence solution developed in Microsoft Power BI.
+
+All records are fictional and created for portfolio demonstration and analytical purposes. No confidential customer or employer data is used.
+
+## 2. Core Datasets
+
+| Dataset | Category | Description |
+|---|---|---|
+| `Dim_Branch` | Dimension | Branch identifiers, branch names, cities, regions, managers and annual targets |
+| `Dim_Customer` | Dimension | Customer identifiers, demographics, age bands, income, employment type and branch mapping |
+| `Dim_Product` | Dimension | Loan product categories, base interest rates and maximum tenure |
+| `Fact_Loan` | Fact | Loan details, disbursement amounts, outstanding balances, interest rates, loan status and days past due |
+| `Fact_Payment` | Fact | Payment schedules, due amounts, paid amounts, payment channels and payment status |
+| `Fact_Collections` | Fact | Collection assignments, overdue amounts, recovered amounts, resolution dates and collection status |
+
+## 3. Calculated Tables
+
+The following tables are created inside Power BI using DAX. They are not separate source datasets.
+
+| Calculated Table | Purpose |
+|---|---|
+| `Dim_Calendar` | Consolidated date dimension based on loan disbursement, collection assignment and payment dates |
+| `Portfolio_Performance` | Provides Performing and Non-Performing portfolio categories |
+| `Customer_Risk_Segment` | Supports NPA-Exposed and Non-NPA customer segmentation |
+| `SecurityAccess` | Stores demonstration user access mappings for Admin, Regional and Branch-level security |
+
+## 4. Key Analytical Areas
+
+- Loan portfolio and outstanding exposure
+- NPA and delinquency analysis
+- Customer demographics and risk segmentation
+- Product and regional portfolio performance
+- Branch-level performance and target achievement
+- Collections, overdue amounts and recovery performance
+- Payment behaviour and collection efficiency
+
+## 5. Data Model
+
+The datasets support a dimensional data model with loan, payment and collection fact tables connected to relevant dimensions.
+
+The model is designed to support interactive reporting, DAX calculations, date-based analysis and branch-level Row-Level Security.
+
+## 6. Data Privacy and Usage
+
+- All banking and customer records are synthetic.
+- Names, identifiers, email addresses and financial values are demonstration data.
+- Demo security emails are fictional and are not intended for authentication against real banking systems.
+- The editable Power BI project file is maintained separately and is not included in this public repository.
+
+## 7. Disclaimer
+
+This project is an independently developed portfolio demonstration. It does not represent an actual bank, financial institution, customer portfolio or production banking system.
