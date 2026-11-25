@@ -219,4 +219,91 @@ No confidential employer, banking customer or production data is included.
 
 **Note:** Candidate primary keys should be validated for uniqueness. The relationships listed above reflect the supplied Power BI model.
 
+---
+
+## 13. Customer_Risk_Segment
+
+**Purpose:** Stores customer risk classification information used for customer segmentation and portfolio risk analysis.
+
+| Column Name | Key / Role | Description |
+|---|---|---|
+| Risk Segment | Attribute | Customer risk classification category |
+
+**Usage:**
+- Supports customer risk segmentation.
+- Provides classification categories for analytical reporting.
+
+---
+
+## 14. Portfolio_Performance
+
+**Purpose:** Provides portfolio classification categories for comparing performing and non-performing loan exposure.
+
+| Column Name | Key / Role | Description |
+|---|---|---|
+| Portfolio Type | Attribute | Portfolio classification category |
+
+**Known Categories:**
+- Performing
+- Non-Performing
+
+**Usage:**
+- Supports portfolio performance comparisons.
+- Used with the Portfolio Performance Amount DAX measure.
+
+---
+
+## 15. Security_Access
+
+**Purpose:** Maintains user-level access information for Dynamic Row-Level Security (RLS).
+
+| Column Name | Key / Role | Description |
+|---|---|---|
+| UserEmail | Security Identifier | User email used for access identification |
+| AccessLevel | Attribute | User access classification |
+| Region | Attribute | Region associated with the user |
+| Branch_ID | Security Mapping | Branch associated with the user |
+
+**Usage:**
+- Supports dynamic user-based filtering.
+- Maps users to authorized branches and regions.
+- Works with the USERPRINCIPALNAME() DAX function.
+- Supports branch-level data access restrictions.
+
+---
+
+## 16. A_Measure
+
+**Purpose:** Centralized measure table used to organize reusable DAX calculations.
+
+**Structure:** Dedicated measure storage table.
+
+**Usage:**
+- Stores reusable KPI calculations.
+- Organizes portfolio and credit risk measures.
+- Supports consistent calculations across report pages.
+
+Note: Individual columns and data types are not documented because they have not yet been supplied.
+
+---
+
+## 17. Supporting Table Summary
+
+| Table | Business Purpose |
+|---|---|
+| Customer_Risk_Segment | Customer risk classification |
+| Portfolio_Performance | Portfolio classification |
+| Security_Access | Dynamic RLS access mapping |
+| A_Measure | Centralized DAX measures |
+
+## 18. Data Privacy and Governance
+
+- All project datasets are synthetic.
+- No confidential employer or production banking data is used.
+- User access is controlled through
+
+
+
+
+
 
