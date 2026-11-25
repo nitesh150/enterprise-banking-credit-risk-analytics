@@ -152,10 +152,12 @@ The architecture consists of:
 
 Detailed documentation is available below:
 
-- [Data Model Overview](06_Data_Model/README.md)
-- [Table Relationships](06_Data_Model/Table_Relationships.md)
-- [Table Dictionary](06_Data_Model/Table_Dictionary.md)
-- [Data Model Diagram](06_Data_Model/Data_Model_Diagram.png)
+## Technical Documentation
+
+- [Data Model Overview](03_Data_Model/README.md)
+- [Table Relationships](03_Data_Model/Table_Relationships.md)
+- [Table Dictionary](03_Data_Model/Table_Dictionary.md)
+- [Data Model Diagram](03_Data_Model/Data_Model_Diagram.png)
 
 ## Data Governance
 
