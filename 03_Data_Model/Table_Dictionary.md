@@ -129,4 +129,94 @@ All datasets used in this portfolio project are synthetic.
 
 No confidential employer, banking customer or production data is included.
 
+---
+
+## 8. Dim_Branch
+
+**Purpose:** Stores branch-level information used for regional performance, branch comparisons and target monitoring.
+
+**Candidate Primary Key:** `Branch_ID`
+
+| Column Name | Key / Role | Description |
+|---|---|---|
+| Branch_ID | Candidate PK | Unique branch identifier |
+| Branch_Name | Attribute | Branch name |
+| City | Attribute | Branch city |
+| Region | Attribute | Geographical region |
+| Country | Attribute | Country |
+| Branch_Manager | Attribute | Branch manager identifier |
+| Branch_Target_Annual | Measure / Attribute | Annual branch performance target |
+
+---
+
+## 9. Dim_Calendar
+
+**Purpose:** Provides a centralized date dimension for time-based analysis, monthly trends, yearly comparisons and period-based reporting.
+
+**Candidate Primary Key:** `Date`
+
+| Column Name | Key / Role | Description |
+|---|---|---|
+| DimYear | Attribute | Calendar year |
+| DimMonthYear | Attribute | Month and year display |
+| DimMonth | Attribute | Month name |
+| KeyDate | Sorting Attribute | Date-based sorting key |
+| MonthNumber | Sorting Attribute | Numeric month sequence |
+| Date | Candidate PK | Calendar date |
+
+**Model Usage:**
+- Connected to Fact_Loan through Disbursement_Date.
+- Connected to Fact_Collections through Assigned_Date.
+- Connected to Fact_Payment through Payment_Date (active).
+- Fact_Payment Due_Date relationship is inactive.
+
+---
+
+## 10. Dim_Customer
+
+**Purpose:** Stores customer demographic, employment, income and relationship information for customer segmentation and portfolio analysis.
+
+**Candidate Primary Key:** `Customer_ID`
+
+| Column Name | Key / Role | Description |
+|---|---|---|
+| Customer_ID | Candidate PK | Unique customer identifier |
+| Customer_Name | Attribute | Customer name |
+| Gender | Attribute | Customer gender category |
+| Age | Attribute | Customer age |
+| Age_Band | Attribute | Customer age classification |
+| Annual_Income | Attribute | Annual customer income |
+| Employment_Type | Attribute | Employment category |
+| City | Attribute | Customer city |
+| Customer_Since | Attribute | Customer relationship start date |
+| Branch_ID | FK | Associated branch identifier |
+
+---
+
+## 11. Dim_Product
+
+**Purpose:** Stores loan product information used for product-level analysis, portfolio segmentation and interest-rate comparisons.
+
+**Candidate Primary Key:** `Product_ID`
+
+| Column Name | Key / Role | Description |
+|---|---|---|
+| Product_ID | Candidate PK | Unique product identifier |
+| Product_Name | Attribute | Loan product name |
+| Base_Interest_Rate | Attribute | Standard product interest rate |
+| Max_Tenure_Months | Attribute | Maximum product tenure in months |
+
+---
+
+## 12. Dimension Table Relationships
+
+| Dimension | Primary Key Candidate | Connected Fact Tables |
+|---|---|---|
+| Dim_Branch | Branch_ID | Fact_Loan, Fact_Payment, Fact_Collections |
+| Dim_Calendar | Date | Fact_Loan, Fact_Payment, Fact_Collections |
+| Dim_Customer | Customer_ID | Fact_Loan, Fact_Payment, Fact_Collections |
+| Dim_Product | Product_ID | Fact_Loan, Fact_Payment, Fact_Collections |
+
+**Note:** Candidate primary keys should be validated for uniqueness. The relationships listed above reflect the supplied Power BI model.
+
 
